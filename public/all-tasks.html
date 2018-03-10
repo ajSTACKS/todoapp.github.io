@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>TaskManager</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/main.css">
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Megrim|Roboto" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+</head>
+<body>
+  <div id="all-tasks">
+
+    <section class="header">
+      <div class="top">
+        <div class="logo">
+          TaskManager
+
+        </div>
+        <div class="tasks-total">
+          <div class="task"> <span class="number">10</span> Tasks</div>
+          <div class="task"><span class="number">5</span> Completed</div>
+        </div>
+        <div class="add-circle"><i class="fa fa-plus" aria-hidden="true"></i></div>
+      </div>
+    </section>
+
+
+    <section class="content-area">
+      <div class="container">
+        <div class="task-container">
+
+                                                                                                                    <!-- TASK BOX -->
+          <div class="task-box">
+            <div class="title">
+              Do laundry
+            </div>
+            <div class="date">
+              Created: August 1, 2017
+            </div>
+            <div class="check-box">
+              <i class="fa fa-check" aria-hidden="true"></i>
+
+            </div>
+          </div>
+          <div class="task-box">
+            <div class="title">
+              Go to the gym
+            </div>
+            <div class="date">
+              Created: August 1, 2017
+            </div>
+            <div class="check-box">
+              <i class="fa fa-check" aria-hidden="true"></i>
+            </div>
+          </div>
+          <div class="task-box">
+            <div class="title">
+              Shop/plan for food
+            </div>
+            <div class="date">
+              Created: August 6, 2017
+            </div>
+            <div class="check-box">
+              <i class="fa fa-check" aria-hidden="true"></i>
+            </div>
+          </div><div class="task-box">
+            <div class="title">
+              Study Ruby on Rails
+            </div>
+            <div class="date">
+              Created: August 6, 2017
+            </div>
+            <div class="check-box">
+              <i class="fa fa-check" aria-hidden="true"></i>
+            </div>
+          </div><div class="task-box">
+            <div class="title">
+              Shop/plan for food
+            </div>
+            <div class="date">
+              Created: August 6, 2017
+            </div>
+            <div class="check-box">
+              <i class="fa fa-check" aria-hidden="true"></i>
+            </div>
+          </div><div class="task-box">
+            <div class="title">
+              Make list for Asia/Europe trip
+            </div>
+            <div class="date">
+              Created: August 10, 2017
+            </div>
+            <div class="check-box">
+              <i class="fa fa-check" aria-hidden="true"></i>
+            </div>
+          </div><div class="task-box">
+            <div class="title">
+              Work on pitch sell
+            </div>
+            <div class="date">
+              Created: August 12, 2017
+            </div>
+            <div class="check-box">
+              <i class="fa fa-check" aria-hidden="true"></i>
+            </div>
+          </div><div class="task-box">
+            <div class="title">
+             Get haircut/massage
+            </div>
+            <div class="date">
+              Created: August 12, 2017
+            </div>
+            <div class="check-box">
+              <i class="fa fa-check" aria-hidden="true"></i>
+            </div>
+          </div><div class="task-box">
+            <div class="title">
+              Make dinner for Bella
+            </div>
+            <div class="date">
+              Created: August 12, 2017
+            </div>
+            <div class="check-box">
+              <i class="fa fa-check" aria-hidden="true"></i>
+            </div>
+          </div><div class="task-box">
+            <div class="title">
+              Prepare for next meetup
+            </div>
+            <div class="date">
+              Created: August 13, 2017
+            </div>
+            <div class="check-box">
+              <i class="fa fa-check" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+                                                                                                        <!-- // POP UP -->
+    <section class="task-form">
+      <div class="close-btn">
+        <i class="fa fa-times-circle-o" aria-hidden="true"></i>
+
+      </div>
+      <form>
+        <div class="form-group">
+          <h3>Add a task</h3>
+          <label for="title">title:</label>
+
+          <input type="text" name="title">
+        </div>
+        <div class="form-group">
+          <label for="title">category:</label>
+          <input type="text" name="title">
+        </div>
+        <div class="form-group">
+          <label for="title">status:</label>
+          <input type="text" name="title">
+        </div>
+        <div class="form-group">
+          <label for="title">notes:</label>
+          <textarea name="notes"></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" name="form button">Add New Task</button>
+
+        </div>
+
+      </form>
+    </section>
+  </div>
+
+  <script src="http://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous">
+  </script>
+
+  <script>
+    $(document).ready(function () {
+      $('.add-circle ').on('click', function () {
+        $('.task-form').addClass('active');
+      });
+      $('.task-form .close-btn').on('click', function () {
+        $('.task-form').removeClass('active');
+      });
+    });
+  </script>
+
+
+
+</body>
+
+</html>
